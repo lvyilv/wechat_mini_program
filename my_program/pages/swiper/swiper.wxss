@@ -1,0 +1,22 @@
+/* pages/swiper/swiper.wxss */
+.swiper-container {
+    height: 150px;
+}
+
+.item {
+    height: 100%;
+    text-align: center;
+    line-height: 150px;
+}
+
+swiper-item:nth-child(1) {
+    background-color: lightgreen;
+}
+
+swiper-item:nth-child(2) {
+    background-color: peru;
+}
+
+swiper-item:nth-child(3) {
+    background-color: cyan;
+}

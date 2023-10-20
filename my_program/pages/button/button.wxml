@@ -1,0 +1,12 @@
+<!--pages/button/button.wxml-->
+<button>普通按钮</button>
+<button type="primary">主色调按钮</button>
+<button type="warn">警告按钮</button>
+<view style="text-align: center;">--------------小尺寸按钮----------------</view>
+<button size="mini">普通按钮</button>
+<button type="primary" size="mini">主色调按钮</button>
+<button type="warn" size="mini">警告按钮</button>
+<view style="text-align: center;">--------------小尺寸镂空按钮----------------</view>
+<button size="mini" plain>普通按钮</button>
+<button type="primary" size="mini" plain>主色调按钮</button>
+<button type="warn" size="mini" plain>警告按钮</button>
