@@ -1,0 +1,6 @@
+.username{
+    color: rgb(255, 136, 0);
+    height: 200rpx;
+    width: 200rpx;
+    background-color: gray;
+}

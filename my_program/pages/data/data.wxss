@@ -1,0 +1,8 @@
+/* pages/data/data.wxss */
+@import "./unsername.wxss"
+input{
+    border:1px solid gray;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+}
