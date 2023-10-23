@@ -1,0 +1,25 @@
+<!--pages/data/data.wxml-->
+<view>{{ info }}</view>
+<image src="{{imageSrc}}" mode="aspectFit" />
+<button type="primary" bind:tap="btnTapHandler">点击我“{{num}}”+1</button>
+<button type="primary" bind:tap="btnTapHandler2" data-info="{{2}}">+2</button>
+<input type="text" bindinput="inputHandler" value="{{msg}}"></input>
+<block wx:if="{{type===3}}">
+    <view wx:if="{{type===1}}">男</view>
+    <view wx:elif="{{type===2}}">女</view>
+    <view wx:else>不男不女</view>
+</block>
+
+<block>
+    <view wx:for="{{arr1}}">
+        {{index}}--{{item}}
+    </view>
+    _____
+    <view wx:for="{{arr1}}" wx:for-index="idx" wx:for-item="value">
+        {{idx}}--{{value}}
+    </view>
+    ---------
+    <view wx:for="{{userlist1}}" wx:key="id">
+        {{index+1}}--{{item.name}}
+    </view>
+</block>

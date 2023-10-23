@@ -1,12 +1,14 @@
 {
   "pages":[
+    "pages/data/data",
+    "pages/index/index",
     "pages/image/image",
     "pages/button/button",
     "pages/text/text",
     "pages/swiper/swiper",
     "pages/scroll/scroll",
     "pages/list/list",
-    "pages/index/index",
+    
     "pages/logs/logs"
     
     
