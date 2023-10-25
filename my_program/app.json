@@ -8,6 +8,10 @@
     "pages/swiper/swiper",
     "pages/scroll/scroll",
     "pages/list/list",
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8a1493f13c919f0fb3d0381073f01df8c0577a26
     "pages/logs/logs"
   ],
   "window":{

@@ -11,17 +11,28 @@
 </block>
 
 <block>
+<<<<<<< HEAD
     <view wx:for="{{arr1}}" wx:key="index">
         {{index}}--{{item}}
     </view>
     _____
     <view wx:for="{{arr1}}" wx:key="idx" wx:for-index="idx" wx:if="idx" wx:for-item="value">
+=======
+    <view wx:for="{{arr1}}">
+        {{index}}--{{item}}
+    </view>
+    _____
+    <view wx:for="{{arr1}}" wx:for-index="idx" wx:for-item="value">
+>>>>>>> 8a1493f13c919f0fb3d0381073f01df8c0577a26
         {{idx}}--{{value}}
     </view>
     ---------
     <view wx:for="{{userlist1}}" wx:key="id">
         {{index+1}}--{{item.name}}
     </view>
+<<<<<<< HEAD
     <view class="username">1111111111</view>
 
+=======
+>>>>>>> 8a1493f13c919f0fb3d0381073f01df8c0577a26
 </block>
