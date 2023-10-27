@@ -1,8 +1,6 @@
 /* pages/data/data.wxss */
-<<<<<<< HEAD
-@import "./unsername.wxss"
-=======
->>>>>>> 8a1493f13c919f0fb3d0381073f01df8c0577a26
+@import "./unsername.wxss";
+
 input{
     border:1px solid gray;
     padding: 5px;
