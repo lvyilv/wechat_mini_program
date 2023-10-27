@@ -1,7 +1,9 @@
 {
   "pages":[
-    "pages/data/data",
+    "pages/home/home",
     "pages/index/index",
+    "pages/data/data",
+    "pages/message/message",
     "pages/image/image",
     "pages/button/button",
     "pages/text/text",
@@ -23,12 +25,22 @@
   "tabBar": {
       "list": [
           {
-              "pagePath": "pages/index/index",
-              "text": "首页"
+              "pagePath": "pages/home/home",
+              "text": "首页",
+              "iconPath": "./images/home.png",
+              "selectedIconPath": "./images/home_active.png"
           },
           {
             "pagePath": "pages/data/data",
-            "text": "data"  
+            "text": "测试",
+            "iconPath": "./images/home.png",
+            "selectedIconPath": "./images/home_active.png"
+          },
+          {
+            "pagePath": "pages/message/message",
+            "text": "消息",
+            "iconPath": "./images/home.png",
+            "selectedIconPath": "./images/home_active.png"
           }
       ],
       "position": "bottom"
