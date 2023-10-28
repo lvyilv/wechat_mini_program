@@ -1,0 +1,21 @@
+<!--pages/newPages/home/home.wxml-->
+<!-- 轮播图区域 -->
+<swiper indicator-dots="true" circular="true">
+    <swiper-item wx:for="{{swiperList}}" wx:key="id">
+        <image src="{{item.image}}" mode="" />
+    </swiper-item>
+</swiper>
+<!-- 九宫格区域 -->
+<view class="grid-list">
+    <view class="grid-item" wx:for="{{gridList}}" wx:key="id">
+        <image src="{{item.icon}}" alt="" />
+        <text>{{item.name}}</text>
+    </view>
+</view>
+<view class="image-box">
+    <image src="/images/link-01.png" mode=""/>
+    <image src="/images/link-02.png" mode=""/>
+</view>
+<text>{{count}}</text>
+<button bind:tap="countAdd">count++</button> 
+<view style="height: 500rpx;background-color: lightblue;"></view>

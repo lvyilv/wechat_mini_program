@@ -1,50 +1,43 @@
 {
-  "pages":[
-    "pages/home/home",
-    "pages/index/index",
-    "pages/data/data",
-    "pages/message/message",
-    "pages/image/image",
-    "pages/button/button",
-    "pages/text/text",
-    "pages/swiper/swiper",
-    "pages/scroll/scroll",
-    "pages/list/list",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#2b6b4b",
-    "navigationBarTitleText": "捋一捋1",
-    "navigationBarTextStyle":"white",
-    "enablePullDownRefresh": true,
-    "backgroundColor": "#efefef",
-    "backgroundTextStyle": "dark",
-    "onReachBottomDistance": 0
-  },
-  "tabBar": {
-      "list": [
-          {
-              "pagePath": "pages/home/home",
-              "text": "首页",
-              "iconPath": "./images/home.png",
-              "selectedIconPath": "./images/home_active.png"
-          },
-          {
-            "pagePath": "pages/data/data",
-            "text": "测试",
-            "iconPath": "./images/home.png",
-            "selectedIconPath": "./images/home_active.png"
-          },
-          {
-            "pagePath": "pages/message/message",
-            "text": "消息",
-            "iconPath": "./images/home.png",
-            "selectedIconPath": "./images/home_active.png"
-          }
-      ],
-      "position": "bottom"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/newPages/home/home",
+        "pages/newPages/message/message",
+        "pages/newPages/contact/contact"
+    ],
+
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#2b4b6b",
+        "navigationBarTitleText": "本地生活",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true, 
+        "backgroundColor": "#efefef",
+        "backgroundTextStyle": "dark",
+        "onReachBottomDistance": 50
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/newPages/home/home",
+                "text": "首页",
+                "iconPath": "./images/tabs/home.png",
+                "selectedIconPath": "./images/tabs/home-active.png"
+            },
+            {
+                "pagePath": "pages/newPages/message/message",
+                "text": "消息",
+                "iconPath": "./images/tabs/message.png",
+                "selectedIconPath": "./images/tabs/message-active.png"
+            },
+            {
+                "pagePath": "pages/newPages/contact/contact",
+                "text": "练习我们",
+                "iconPath": "./images/tabs/contact.png",
+                "selectedIconPath": "./images/tabs/contact-active.png"
+            }
+        ],
+        "position": "bottom"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }
