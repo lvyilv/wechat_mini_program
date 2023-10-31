@@ -5,7 +5,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-        colorList:[]
+        colorList:[],
+        isLoading:false
     },
     getColors(){
         wx.request({
@@ -16,6 +17,12 @@ Page({
      * 生命周期函数--监听页面加载
      */
     getColors(){
+        this.setData({
+            isLoading:this.data.isLoading = true
+        })
+        wx.showLoading({
+          title: '数据正在加载中...',
+        })
         wx.request({
           url: 'https://applet-base-api-t.itheima.net/api/color',
           method:"GET",
@@ -23,7 +30,13 @@ Page({
               this.setData({
                   colorList: [...this.data.colorList,...res.data]
               })
-          }
+          },
+          complete:(()=>{
+            wx.hideLoading();
+            this.setData({
+                isLoading:this.data.isLoading = false
+            })
+          })
         })
     },
     onLoad(options) {
@@ -70,10 +83,11 @@ Page({
      * 页面上拉触底事件的处理函数
      */
     onReachBottom() {
+        if (this.data.isLoading) return
         this.getColors();
     },
 
-    /**
+    /** 
      * 用户点击右上角分享
      */
     onShareAppMessage() {
