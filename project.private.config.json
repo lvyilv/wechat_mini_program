@@ -10,7 +10,7 @@
             "list": [
                 {
                     "name": "",
-                    "pathName": "pages/newPages/home/home",
+                    "pathName": "pages/newPages/contact/contact",
                     "query": "",
                     "launchMode": "default",
                     "scene": null

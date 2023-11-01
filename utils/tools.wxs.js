@@ -1,13 +1,11 @@
-// pages/newPages/contact/contact.js
+// utils/tools.wxs.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        count:0,
-        userName:'zs',
-        country:'CHINA'
+
     },
 
     /**

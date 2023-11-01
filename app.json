@@ -2,17 +2,16 @@
     "pages": [
         "pages/newPages/home/home",
         "pages/newPages/message/message",
-        "pages/newPages/contact/contact"
+        "pages/newPages/contact/contact",
+        "utils/tools.wxs"
     ],
-
     "window": {
-        "backgroundTextStyle": "light",
+        "backgroundTextStyle": "dark",
         "navigationBarBackgroundColor": "#2b4b6b",
         "navigationBarTitleText": "本地生活",
         "navigationBarTextStyle": "white",
-        "enablePullDownRefresh": true, 
+        "enablePullDownRefresh": true,
         "backgroundColor": "#efefef",
-        "backgroundTextStyle": "dark",
         "onReachBottomDistance": 50
     },
     "tabBar": {
