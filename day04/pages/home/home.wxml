@@ -1,0 +1,3 @@
+<!--pages/home/home.wxml-->
+<text>pages/home/home.wxml</text>
+<my-test1 max='5'></my-test1>
