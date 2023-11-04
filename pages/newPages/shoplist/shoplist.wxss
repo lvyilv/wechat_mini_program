@@ -1,0 +1,27 @@
+/* pages/newPages/shoplist/shoplist.wxss */
+.shop-item{
+    display: flex; 
+    height: 150prx;
+    padding: 15rpx;
+    border: 1rpx solid #efefef;
+    border-radius: 8rpx;
+    margin: 15rpx;
+    box-shadow: 10rpx 10rpx 15rpx #ddd;
+}
+
+.thumb image{
+    height: 250rpx;
+    width: 250rpx;
+    display: block;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 24rpx;
+    margin-left: 15rpx;
+}
+.shop-title{
+    font-weight: bold;
+}

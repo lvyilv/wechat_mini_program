@@ -5,38 +5,46 @@ Page({
      * 页面的初始数据
      */
     data: {
-        swiperList:[],
-        gridList:[],
-        count:0
+        swiperList: [],
+        gridList: [],
+        count: 0
     },
-    getSwiperList(){
+    getSwiperList() {
         wx.request({
-          url: 'https://applet-base-api-t.itheima.net/slides',
-          method:"GET",
-          success:(res) => {
-              this.setData({
-                  swiperList: res.data
-              })
-            //   console.log(this.data.swpierList)
-          }
+            url: 'https://applet-base-api-t.itheima.net/slides',
+            method: "GET",
+            success: (res) => {
+                this.setData({
+                    swiperList: res.data
+                })
+                //   console.log(this.data.swpierList)
+            }
         })
     },
-    getGridList(){
+    getGridList() {
         wx.request({
-          url: 'https://applet-base-api-t.itheima.net/categories',
-          method:"GET",
-          success:(res) =>{
-             this.setData({
-                 gridList: res.data
-             })
-          }
+            url: 'https://applet-base-api-t.itheima.net/categories',
+            method: "GET",
+            success: (res) => {
+                this.setData({
+                    gridList: res.data
+                })
+            }
         })
     },
-    countAdd(){
+    countAdd() {
         this.setData({
             count: this.data.count + 1
         })
 
+    },
+    toShopList(e) {
+        let tital = JSON.parse(e.target.dataset.info)
+        if (tital.name === '美食') {
+            wx.navigateTo({
+              url: '/pages/newPages/shoplist/shoplist?id='+tital.id+'&name='+tital.name
+            })
+        }
     },
     /**
      * 生命周期函数--监听页面加载
@@ -81,7 +89,7 @@ Page({
     onPullDownRefresh() {
         console.log("触发了下拉刷新");
         this.setData({
-            count:0
+            count: 0
         })
         wx.stopPullDownRefresh()
     },

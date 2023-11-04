@@ -3,6 +3,7 @@
         "pages/newPages/home/home",
         "pages/newPages/message/message",
         "pages/newPages/contact/contact",
+        "pages/newPages/shoplist/shoplist",
         "utils/tools.wxs"
     ],
     "window": {

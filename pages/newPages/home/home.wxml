@@ -7,9 +7,9 @@
 </swiper>
 <!-- 九宫格区域 -->
 <view class="grid-list">
-    <view class="grid-item" wx:for="{{gridList}}" wx:key="id">
-        <image src="{{item.icon}}" alt="" />
-        <text>{{item.name}}</text>
+    <view class="grid-item" wx:for="{{gridList}}" wx:key="id" bind:tap="toShopList" data-info='{"id":"{{item.id}}","name":"{{item.name}}"}'>
+        <image src="{{item.icon}}" data-info='{"id":"{{item.id}}","name":"{{item.name}}"}' alt="" />
+        <text data-info='{"id":"{{item.id}}","name":"{{item.name}}"}'>{{item.name}}</text>
     </view>
 </view>
 <view class="image-box">

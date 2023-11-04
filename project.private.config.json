@@ -10,8 +10,8 @@
             "list": [
                 {
                     "name": "",
-                    "pathName": "pages/newPages/contact/contact",
-                    "query": "",
+                    "pathName": "pages/newPages/shoplist/shoplist",
+                    "query": "id=1&name=美食",
                     "launchMode": "default",
                     "scene": null
                 }
