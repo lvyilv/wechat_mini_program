@@ -1,0 +1,5 @@
+<!--components/test2/test2.wxml-->
+<view class="colorBox" style="background-color: rgb({{fullColor}});">目前的颜色是{{fullColor}}</view>
+<button size="mini" bind:tap="changRGB" data-rgb="R" type="warn">RED</button>
+<button size="mini" bind:tap="changRGB" data-rgb="G" type="primary">GREEN</button>
+<button size="mini" bind:tap="changRGB" data-rgb="B" type="default">BLUE</button>
