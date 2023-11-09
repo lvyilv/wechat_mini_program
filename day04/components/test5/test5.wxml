@@ -1,0 +1,4 @@
+<!--components/test5/test5.wxml-->
+<text>components/test5/test5.wxml</text>
+<button bind:tap="countAdd">电机按钮子组件count+1</button>
+<view>子组件中的count为{{count}}</view>

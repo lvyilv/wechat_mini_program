@@ -1,0 +1,2 @@
+<!--components/test4/test4.wxml-->
+<text>子组件中test4组件中的count值为{{count}}</text>
