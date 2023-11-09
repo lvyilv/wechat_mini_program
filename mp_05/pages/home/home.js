@@ -7,7 +7,17 @@ Page({
   data: {
 
   },
-
+  async getInfo(){
+    const {data:res} = await wx.p.request({
+        method:"GET",
+        url:"https://applet-base-api-t.itheima.net/api/get",
+        data:{
+            name:'zs',
+            age:20
+        }
+    })
+    console.log(res.data)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
