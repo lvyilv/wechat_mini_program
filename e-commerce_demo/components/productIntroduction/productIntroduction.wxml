@@ -1,0 +1,7 @@
+<!--components/productsIntroduction/productIntroduction.wxml-->
+{{shopInfo.id}}
+<swiper class="swiper" indicator-dots="true" circular="true">
+  <swiper-item>
+    <image src="{{shopInfo.shopImage}}" class="swiper-image" mode="scaleToFill"></image>
+  </swiper-item>
+</swiper>

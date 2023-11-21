@@ -1,0 +1,7 @@
+<view class="shopBox" wx:for="{{shopList}}" wx:key="id" bind:tap="toShopPage" data-shopId="{{item.id}}">
+  <image data-shopId="{{item.id}}" class="shopImage" src="{{item.shopImage}}" mode="" />
+  <view data-shopId="{{item.id}}" class="shopInfo">
+    <view data-shopId="{{item.id}}" class="shopIntroduce">{{item.introduce}}</view>
+    <view data-shopId="{{item.id}}" class="shopPrice">￥{{item.price}}</view>
+  </view>
+</view>

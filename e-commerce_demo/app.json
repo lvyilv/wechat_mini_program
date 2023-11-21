@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/shoppingCart/shoppingCart",
+    "pages/myself/myself",
+    "pages/nineGrid/delicacies/delicacies",
+    "pages/nineGrid/shoping/shoping",
+    "pages/nineGrid/shopPage/shopPage"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#efefef",
+    "navigationBarTitleText": "电商平台",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "images/tabs/home.png",
+        "selectedIconPath": "images/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/shoppingCart/shoppingCart",
+        "text": "购物车",
+        "iconPath": "images/tabs/shoppingCart.png",
+        "selectedIconPath": "images/tabs/shoppingCart-active.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "images/tabs/myself.png",
+        "selectedIconPath": "images/tabs/myself-active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "delicacy-list":"./components/delicacy/delicacy",
+    "shoping-list":"./components/shopingList/shopingList",
+    "product-introduction":"./components/productIntroduction/productIntroduction"
+  }
+}

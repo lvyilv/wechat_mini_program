@@ -1,0 +1,2 @@
+<!--pages/nineGrid/shopPage/shopPage.wxml-->
+<product-introduction shopInfo="{{shopInfo}}"></product-introduction>

@@ -1,0 +1,17 @@
+/* components/productsIntroduction/productIntroduction.wxss */
+.swiper {
+  height: 300rpx;
+  width: 100%;
+}
+
+.swiper swiper-item {
+  height: 300rpx;
+  width: 100%;
+}
+
+.swiper image {
+  height: 100%;
+  /* width: a; */
+  margin: auto;
+  display: block;
+}

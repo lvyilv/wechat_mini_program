@@ -1,0 +1,44 @@
+/* pages/home/home.wxss */
+.swiper {
+  height: 300rpx;
+  width: 100%;
+}
+
+.swiper swiper-item {
+  height: 300rpx;
+  width: 100%;
+}
+
+.swiper image {
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
+/* 九宫格 */
+#nineGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5rpx;
+}
+
+.nineGridItem {
+  width: 33%;
+  height: 220rpx;
+  border: 1rpx solid rgb(223, 222, 222);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.nineGridItem image {
+  width: 100rpx;
+  height: 100rpx;
+  /* margin: auto; */
+
+
+}

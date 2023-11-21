@@ -1,0 +1,41 @@
+/* pages/nineGrid/delicacies/delicacies.wxss */
+.shopBox {
+  margin: 15rpx;
+  box-shadow: 1rpx 1rpx 15rpx gray;
+  padding: 20rpx;
+  height: 250rpx;
+}
+
+.shopImage {
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 5%;
+  float: left;
+}
+
+.shopInfo {
+  overflow: hidden;
+  position: relative;
+  left: 10rpx;
+  height: 250rpx;
+}
+.shopName{
+  font-size: 50rpx;
+  font-weight: 1000;
+}
+.shopIntroduce{
+  font-size: 30rpx;
+  font-weight: 500;
+  position: relative;
+  top: 30rpx;
+  height: 80rpx;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+.shopPrice{
+  position: relative;
+  bottom: -50rpx;
+  color: red;
+  font-size: 40rpx;
+  font-weight: 800;
+}

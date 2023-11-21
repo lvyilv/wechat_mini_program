@@ -1,9 +1,5 @@
 {
     "description": "项目配置文件",
-    "packOptions": {
-        "ignore": [],
-        "include": []
-    },
     "setting": {
         "urlCheck": true,
         "es6": true,
@@ -21,17 +17,23 @@
             "ignore": [],
             "disablePlugins": [],
             "outputPath": ""
-        }
+        },
+        "enhance": false,
+        "packNpmRelationList": [],
+        "ignoreUploadUnusedFiles": true
     },
     "compileType": "miniprogram",
-    "libVersion": "2.11.3",
     "appid": "wxe07c155d13eb55d1",
-    "projectname": "mp_05",
     "simulatorType": "wechat",
     "simulatorPluginLibVersion": {},
     "condition": {},
     "editorSetting": {
         "tabIndent": "insertSpaces",
         "tabSize": 4
+    },
+    "libVersion": "2.11.3",
+    "packOptions": {
+        "ignore": [],
+        "include": []
     }
 }

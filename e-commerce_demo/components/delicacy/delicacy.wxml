@@ -1,0 +1,8 @@
+<view class="shopBox" wx:for="{{shopList}}" wx:key="id">
+  <image class="shopImage" src="{{item.shopImage}}" mode="" />
+  <view class="shopInfo">
+    <view class="shopName">{{item.shopName}}</view>
+    <view class="shopIntroduce">{{item.introduce}}</view>
+    <view class="shopPrice">￥{{item.price}}</view>
+  </view>
+</view>

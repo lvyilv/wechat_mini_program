@@ -1,0 +1,17 @@
+<!--pages/home/home.wxml-->
+<view>
+  <swiper class="swiper" indicator-dots="true" circular="true">
+    <block wx:for="{{imageUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="swiper-image" mode="scaleToFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 九宫格区域 -->
+<view id="nineGrid">
+  <view class="nineGridItem" wx:for="{{nineSquareGridList}}" wx:key="id" bind:tap="toPage" data-id="{{item.id}}">
+    <image src="{{item.imgPath}}" data-id="{{item.id}}" mode="" />
+    <text data-id="{{item.id}}">{{item.text}}</text>
+  </view>
+</view>

@@ -1,0 +1,2 @@
+<!--pages/nineGrid/shoping/shoping.wxml-->
+<shoping-list shopList="{{shopList}}"></shoping-list>
