@@ -9,6 +9,13 @@
             "list": [
                 {
                     "name": "",
+                    "pathName": "pages/nineGrid/shopPage/shopPage",
+                    "query": "shopId=1",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
                     "pathName": "pages/nineGrid/shoping/shoping",
                     "query": "",
                     "launchMode": "default",

@@ -1,4 +1,5 @@
 /* components/productsIntroduction/productIntroduction.wxss */
+
 .swiper {
   height: 300rpx;
   width: 100%;
@@ -11,7 +12,112 @@
 
 .swiper image {
   height: 100%;
-  /* width: a; */
   margin: auto;
   display: block;
+}
+
+/* 头部标签 */
+.shop-head {
+  margin: 20rpx;
+}
+
+.shop-price {
+  color: red;
+  font-size: 50rpx;
+}
+
+.shop-introduce {
+  font-weight: 600;
+  margin: 0rpx 10rpx 0rpx 10rpx;
+}
+
+.shop-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20rpx 10rpx 0rpx 40rpx;
+}
+
+.shop-icon>view {
+  width: 200rpx;
+}
+
+/* 底部选项部分 */
+.shop-info {
+  margin: 10rpx;
+  padding: 20rpx;
+  border-radius: 5%;
+  background-color: white;
+}
+
+.shop-info>view {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  height: 100rpx;
+  text-align: left;
+}
+
+.label {
+  margin-left: 10rpx;
+  margin-right: 50rpx;
+  display: block;
+  width: 80rpx;
+  text-align: left;
+  color: gray;
+}
+
+.label-info {
+  width: 100%;
+}
+
+/* 底部 */
+.bottom {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  height: 90rpx;
+}
+
+.img-lab {
+  margin-left: 50rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bottom-icon {
+  width: 50rpx;
+  height: 50rpx;
+  margin: auto;
+}
+
+.bottom-button {
+  display: flex;
+  flex-direction: row;
+  line-height: 90rpx;
+  margin-left: 20rpx;
+}
+
+.bottom-button>view {
+  width: 180rpx;
+  text-align: center;
+  color: white;
+  font-weight:bolder;
+  
+}
+
+.bottom-button>view:nth-child(1) {
+  background-color: rgb(236, 156, 72);
+  border-radius: 20rpx 0 0 20rpx;
+}
+
+.bottom-button>view:nth-child(2) {
+  background-color: rgb(231, 96, 55);
+  border-radius: 0 20rpx 20rpx 0;
 }

@@ -1,5 +1,17 @@
 {
   "dependencies": {
     "@vant/weapp": "^1.11.1"
-  }
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "^3.12.1"
+  },
+  "name": "e-commerce_demo",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

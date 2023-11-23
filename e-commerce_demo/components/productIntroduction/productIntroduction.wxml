@@ -1,7 +1,57 @@
 <!--components/productsIntroduction/productIntroduction.wxml-->
-{{shopInfo.id}}
+
 <swiper class="swiper" indicator-dots="true" circular="true">
   <swiper-item>
     <image src="{{shopInfo.shopImage}}" class="swiper-image" mode="scaleToFill"></image>
   </swiper-item>
 </swiper>
+<view class="shop-head">
+  <view class="shop-price">￥{{shopInfo.price}}</view>
+  <view class="shop-introduce">{{shopInfo.introduce}}</view>
+  <view>
+  </view>
+  <view class="shop-icon">
+    <view>
+      <van-icon name="share-o"></van-icon> 推荐
+    </view>
+    <view>
+      <van-icon name="friends-o"></van-icon> 帮我送
+    </view>
+    <view>
+      <van-icon name="like-o"></van-icon> 分享
+    </view>
+  </view>
+</view>
+<view class="shop-info">
+  <view>
+    <view class="label"><label for="">选择</label></view>
+    <view class="label-info">比赛场次/票面票价/区域位置</view>
+  </view>
+  <view>
+    <view class="label"><label for="">发货</label></view>
+    <view class="label-info">辽宁沈阳 快递免运费 现货，付款48小时之后发货</view>
+  </view>
+  <view>
+    <view class="label"><label for="">保障</label></view>
+    <view class="label-info">支持7天无理由退货</view>
+  </view>
+  <view>
+    <view class="label"><label for="">参数</label></view>
+    <view class="label-info">比赛票形式 区域位置</view>
+  </view>
+</view>
+<view class="bottom">
+  <view class="img-lab">
+    <image class="bottom-icon" src="/images/NineSquareGrid/shop.png" mode=""/><label for="">店铺</label>
+  </view>
+  <view class="img-lab">
+    <image class="bottom-icon" src="/images/NineSquareGrid/wangwang.png" mode=""/><label for="">联系</label>
+  </view>
+  <view class="img-lab">
+    <image class="bottom-icon" src="/images/NineSquareGrid/collect.png" mode=""/><label for="">收藏</label>
+  </view>
+  <view class="bottom-button">
+    <view>加入购物车</view>
+    <view>立即购买</view>
+  </view>
+</view>
