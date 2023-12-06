@@ -1,2 +1,7 @@
 <!--pages/shoppingCart/shoppingCart.wxml-->
-<text>pages/shoppingCart/shoppingCart.wxml</text>
+<shoping-cart bind:myEvent="refresh"></shoping-cart>
+<view class="bottom-div">
+  <view>总价格</view>
+  <view>{{sumPrice}}￥</view>
+  <view>结算</view>
+</view>

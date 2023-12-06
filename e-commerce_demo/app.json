@@ -39,6 +39,10 @@
   "usingComponents": {
     "delicacy-list":"./components/delicacy/delicacy",
     "shoping-list":"./components/shopingList/shopingList",
-    "product-introduction":"./components/productIntroduction/productIntroduction"
+    "product-introduction":"./components/productIntroduction/productIntroduction",
+    "shoping-cart":"./components/shopingCart/shopingCart",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-button": "@vant/weapp/button/index"
   }
 }

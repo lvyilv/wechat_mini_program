@@ -1,1 +1,28 @@
 /* pages/shoppingCart/shoppingCart.wxss */
+.bottom-div{
+  display:flex;
+  position:absolute;
+  bottom: 0rpx;
+  border: 1rpx solid gray;
+  width: 100%;
+}
+.bottom-div view{
+  font-size: 50rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.bottom-div view:nth-child(1){
+  margin-left: 10rpx;
+  color: red;
+  font-weight: 600;
+}
+.bottom-div view:nth-child(2){
+  margin-left: 200rpx;
+}
+.bottom-div view:nth-child(3){
+  position:absolute;
+  right: 0;
+  width: 200rpx;
+  background-color: orange;
+  text-align: center;
+}

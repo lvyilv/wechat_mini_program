@@ -1,0 +1,12 @@
+<view class="shopBox" wx:for="{{shopList}}" wx:key="id">
+  <van-checkbox bind:tap="onchange" data-id="{{item.id}}" value="{{item.checked}}" shape="square"></van-checkbox>
+  <image class="shopImage" src="{{item.shopImage}}" mode="" />
+  <view class="shopInfo">
+    <!-- <view class="shopName">{{item.shopName}}</view> -->
+    <view class="shopIntroduce">{{item.introduce}}</view>
+    <view class="shopPrice">￥{{item.price}}</view>
+    <view class="shopQuantity">数量 <van-button bind:tap="changeQuantity" data-info='{"id":{{item.id}},"info":"+"}' size="small" type="warning">+</van-button>{{item.shopQuantity}}
+      <van-button bind:tap="changeQuantity" size="small" data-info='{"id":{{item.id}},"info":"-"}' type="primary">-</van-button>
+    </view>
+  </view>
+</view>

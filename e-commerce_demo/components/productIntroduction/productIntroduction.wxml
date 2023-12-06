@@ -42,16 +42,34 @@
 </view>
 <view class="bottom">
   <view class="img-lab">
-    <image class="bottom-icon" src="/images/NineSquareGrid/shop.png" mode=""/><label for="">店铺</label>
+    <image class="bottom-icon" src="/images/NineSquareGrid/shop.png" mode="" /><label for="">店铺</label>
   </view>
   <view class="img-lab">
-    <image class="bottom-icon" src="/images/NineSquareGrid/wangwang.png" mode=""/><label for="">联系</label>
+    <image class="bottom-icon" src="/images/NineSquareGrid/wangwang.png" mode="" /><label for="">联系</label>
   </view>
   <view class="img-lab">
-    <image class="bottom-icon" src="/images/NineSquareGrid/collect.png" mode=""/><label for="">收藏</label>
+    <image class="bottom-icon" src="/images/NineSquareGrid/collect.png" mode="" /><label for="">收藏</label>
   </view>
+
   <view class="bottom-button">
-    <view>加入购物车</view>
+    <view bind:tap="showPopup">加入购物车</view>
     <view>立即购买</view>
+  </view>
+</view>
+
+
+<view class="popup" style="{{popupDisplay}}">
+  <view class="popup-content">
+    <view class="introduce">{{shopInfo.introduce}}</view>
+    <view class="quantity-select">
+      <view for="">数量</view>
+      <van-button class="van-button" bind:tap="add" type="danger">+</van-button>
+      <view class="van-button">{{shopQuantity}}</view>
+      <van-button class="van-button" bind:tap="reduce" type="primary">-</van-button>
+    </view>
+    <view class="select-button">
+      <van-button type="info" size="normal" bind:tap="saveQuantity">确定</van-button>
+      <van-button type="warning" size="normal" bind:tap="unshowPopup" >取消</van-button>
+    </view>
   </view>
 </view>
